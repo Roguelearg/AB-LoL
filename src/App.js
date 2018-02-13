@@ -8,7 +8,11 @@ class App extends Component {
     return (
       <div>
         <header>
-
+          <h1>ARAM Build</h1>
+          <nav>
+            <a href=''>Home</a>
+            <a href=''>Winrates</a>
+          </nav>
         </header>
         <ChooseChampionLayout />
         <WinratesLayout />
