@@ -6,19 +6,20 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <h1>ARAM Build</h1>
-          <nav>
-            <a href=''>Home</a>
-            <a href=''>Winrates</a>
-          </nav>
-        </header>
-        <ChooseChampionLayout />
-        <WinratesLayout />
-        <footer>
-
-        </footer>
+      <div className="fullContent">
+        <div className="contenu">
+          <header>
+            <h1 className="title cb ff">ARAM Build</h1>
+            <nav className="menu ff">
+              <a href=''>Home</a>
+              <a href=''>Winrates</a>
+            </nav>
+          </header>
+          <ChooseChampionLayout />
+          <WinratesLayout />
+          <footer>
+          </footer>
+        </div>
       </div>
     );
   }
