@@ -1,0 +1,12 @@
+.test {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px 20px 10px 20px;
+  text-align: center;
+  border: solid 5px white;
+  border-radius: 15px;
+}
+
+.charname {
+  /* margin-top: 0; */
+}

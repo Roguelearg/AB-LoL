@@ -9,10 +9,10 @@ class App extends Component {
       <div className="fullContent">
         <div className="contenu">
           <header>
-            <h1 className="title cb ff">ARAM Build</h1>
+            <h1 className="title cw ft">ARAM Build</h1>
             <nav className="menu ff">
-              <a href=''>Home</a>
-              <a href=''>Winrates</a>
+              <a className="cw" href=''>Home</a>
+              <a className="cw" href=''>Winrates</a>
             </nav>
           </header>
           <ChooseChampionLayout />

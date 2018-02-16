@@ -1,0 +1,17 @@
+input {
+  border: none;
+  border: solid 1px;
+  border-radius: 16px;
+  width: 350px;
+  height: 45px;
+  background-color: rgba(20, 133, 204, 0.1);
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.ofh {
+  margin-top: 40px;
+}
