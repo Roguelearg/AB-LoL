@@ -14,4 +14,7 @@ input {
 
 .ofh {
   margin-top: 40px;
+  border-bottom: 1px solid black;
+  margin-left: 60px;
+  margin-right: 60px;
 }

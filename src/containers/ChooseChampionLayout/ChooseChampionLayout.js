@@ -5,7 +5,7 @@ import './ChooseChampionLayout.css';
 const ChooseChampionLayout = () => {
   return (
     <div className="ofh">
-      <h2 className="ff cw">Choose a Champion</h2>
+      <h2 className="ft cw">Choose a Champion</h2>
       <input type="text" className="ff"/>
       <Cards />
     </div>

@@ -4,7 +4,7 @@ import './WinratesLayout.css';
 const WinratesLayout = () => {
   return (
     <div >
-
+      <h1 className="ft cw">Winrates</h1>
     </div>
   );
 }

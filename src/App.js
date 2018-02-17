@@ -15,8 +15,10 @@ class App extends Component {
               <a className="cw" href=''>Winrates</a>
             </nav>
           </header>
-          <ChooseChampionLayout />
-          <WinratesLayout />
+          <div className="content">
+            <ChooseChampionLayout />
+            <WinratesLayout />
+          </div>
           <footer>
           </footer>
         </div>
