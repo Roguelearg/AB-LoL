@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div className="fullContent">
         <div className="contenu">
-          <header>
-            <h1 className="title cw ft">ARAM Build</h1>
+          <header className="">
+            <h1 className="title cw ft pl2">ARAM Build</h1>
             <nav className="menu ff">
               <a className="cw" href=''>Home</a>
               <a className="cw" href=''>Winrates</a>

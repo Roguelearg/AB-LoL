@@ -5,8 +5,10 @@ import './ChooseChampionLayout.css';
 const ChooseChampionLayout = () => {
   return (
     <div className="ofh">
-      <h2 className="ft cw">Choose a Champion</h2>
-      <input type="text" className="ff"/>
+      <div className="pl2">
+        <h2 className="ft cw">Choose a Champion</h2>
+        <input type="text" className="ff"/>
+      </div>
       <Cards />
     </div>
   );
