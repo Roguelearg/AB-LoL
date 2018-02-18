@@ -28,7 +28,7 @@
 
 .contenu {
   grid-area: contenu;
-  max-width: 990px;
+  max-width: 1110px;
   width: 100%;
   justify-self: center;
   background-repeat: no-repeat;
@@ -37,8 +37,6 @@
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 header {
@@ -46,20 +44,22 @@ header {
   grid-template-columns: auto 1fr;
   grid-template-areas: " title menu-driven";
   justify-content: center;
-  border-bottom: solid 1px black;
+  /* border-bottom: solid 1px black; */
   top: 0;
   position: fixed;
   max-width: 990px;
   width: 100%;
   background-color: #1485CC;
   transition: all 0.15s linear;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-header.active {
+/* header.active {
      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
+} */
 
-.title {
+.title {uppercase
   grid-area: title;
   /* padding-left: 20px; */
   padding-right: 30px;
@@ -85,4 +85,10 @@ a {
 
 .content {
   margin-top: 180px;
+}
+
+.active {
+  -webkit-box-shadow: 0 4px 3px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 4px 3px -3px rgba(0,0,0,0.75);
+  box-shadow: 0 4px 3px -3px rgba(0,0,0,0.75);
 }
