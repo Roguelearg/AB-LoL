@@ -24,14 +24,14 @@ class App extends Component {
     // console.log('test', this.state.header);
     return (
       <div className="fullContent">
+        <header className={`${this.state.header}`}>
+          <h1 className="title cw ft pl2">ARAM Build</h1>
+          <nav className="menu ff">
+            <a className="cw" href=''>Champions</a>
+            <a className="cw" href=''>Winrates</a>
+          </nav>
+        </header>
         <div className="contenu">
-          <header className={`${this.state.header}`}>
-            <h1 className="title cw ft pl2">ARAM Build</h1>
-            <nav className="menu ff">
-              <a className="cw" href=''>Home</a>
-              <a className="cw" href=''>Winrates</a>
-            </nav>
-          </header>
           <div className="content">
             <ChooseChampionLayout />
             <WinratesLayout />
