@@ -7,8 +7,8 @@ const WinratesLayout = () => {
     <div className="ofh">
       <h1 className="ft nmt bcr">Winrates</h1>
       <div className="tables">
-        <Table className="best"/>
-        <Table className="worst"/>
+        <Table className="best" name="Best"/>
+        <Table className="worst" name="Worst"/>
       </div>
     </div>
   );
