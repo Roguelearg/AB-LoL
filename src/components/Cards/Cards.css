@@ -1,14 +1,7 @@
 .cards {
-  padding-top: 40px;
   display: flex;
-  max-width: 100%;
-  width: auto;
   justify-content: center;
   flex-flow: row wrap;
-  overflow-x: hidden;
-  background-color: rgba(12, 83, 127, 0.8);
-  margin-top: 140px;
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,1);
-  box-shadow: 2px 2px 4px 0px rgba(0,0,0,1);
+  overflow: hidden;
+  padding-bottom: 30px;
 }

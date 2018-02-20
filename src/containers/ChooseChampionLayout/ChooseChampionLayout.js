@@ -6,8 +6,8 @@ const ChooseChampionLayout = () => {
   return (
     <div className="ofh">
       <div className="bcr">
-        <h1 className="ft cw nmt">Choose a Champion</h1>
-        <input type="text" className="ff"/>
+        <h1 className="ft nmt">Choose a Champion</h1>
+        <input type="text" className="ff" placeholder="Search for a champion"/>
       </div>
       <Cards />
     </div>

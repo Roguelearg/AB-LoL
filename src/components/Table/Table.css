@@ -1,0 +1,23 @@
+.tc {
+  text-align: center;
+}
+
+table {
+  padding-bottom: 30px;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);
+}
+
+th {
+  padding: 10px 50px;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(25, 167, 255, 1);
+}

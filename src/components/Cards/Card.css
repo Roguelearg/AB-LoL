@@ -1,6 +1,6 @@
 .test {
   display: inline-block;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 10px;
   padding: 20px 20px 10px 20px;
   text-align: center;
   /* border: solid 1px black; */
@@ -13,11 +13,19 @@
 }
 
 .charname {
-  color: black;
+  color: rgba(25, 167, 255, 1);
+  -webkit-text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  -moz-text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  /* font-weight: 700; */
 }
 
 .winrates {
-  color: black;
+  color: rgba(25, 167, 255, 1);
+  -webkit-text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  -moz-text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  font-weight: 600;
 }
 
 .test:hover {
