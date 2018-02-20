@@ -4,22 +4,47 @@ import WinratesLayout from './containers/WinratesLayout/WinratesLayout';
 import './App.css';
 
 class App extends Component {
+
+  constructor() {
+      super();
+      this.state = {
+        header: ''
+      };
+  }
+
+  scrollEventListener = () => {
+    window.scrollY > 0 ? this.setState({header: 'active'}) : this.setState({header: ''})
+  }
+
+   componentDidMount() {
+     window.addEventListener('scroll', this.scrollEventListener);
+  }
+
   render() {
     return (
       <div className="fullContent">
-        <div className="contenu">
-          <header>
-            <h1 className="title cb ff">ARAM Build</h1>
-            <nav className="menu ff">
-              <a href=''>Home</a>
-              <a href=''>Winrates</a>
-            </nav>
-          </header>
-          <ChooseChampionLayout />
-          <WinratesLayout />
-          <footer>
-          </footer>
+        <header className={`${this.state.header}`}>
+          <h1 className="title cw ft pl2">ARAM Builds</h1>
+          <nav className="menu ff">
+            <a className="cw" href=''>Champions</a>
+            <a className="cw" href=''>Winrates</a>
+          </nav>
+          <p className="patch">Patch 8.3</p>
+        </header>
+        <div className="container">
+          <div className="content">
+            <div className="desc">
+              <p> Welcome to ARAM Builds </p>
+              <p> This web site provides you access to most used ARAM builds by
+                League of Legends players
+              </p>
+            </div>
+            <ChooseChampionLayout />
+            <WinratesLayout />
+          </div>
         </div>
+        <footer>
+        </footer>
       </div>
     );
   }

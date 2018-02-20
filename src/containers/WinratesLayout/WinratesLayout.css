@@ -1,0 +1,14 @@
+.tables {
+  display: grid;
+  grid-template-areas: " best worst ";
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.best {
+  grid-area: best;
+}
+
+.worst {
+  grid-area: worst;
+}
