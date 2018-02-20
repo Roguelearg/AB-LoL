@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cors": "^2.8.4",
+    "kindred-api": "^2.0.83",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "riot-api": "^0.1.0",
+    "riot-lol-api": "^4.2.13"
   },
   "scripts": {
     "start": "react-scripts start",
