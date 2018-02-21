@@ -10,10 +10,11 @@ import './Cards.css';
 // }
 class Cards extends Component {
 
-  constructor() {
+  constructor({patch}) {
     super();
     this.state = {
-      champions: []
+      champions: [],
+      patch: patch
     }
   }
 
@@ -22,7 +23,7 @@ class Cards extends Component {
   }
 
   getNames = () => {
-    fetch('http://ddragon.leagueoflegends.com/cdn/8.3.1/data/en_US/champion.json')
+    fetch(`http://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
       .then(response => response.json())
       .then(data => {
         return this.setState({champions: Object.values(data.data)})
@@ -32,7 +33,7 @@ class Cards extends Component {
   makeCards = () => {
     let vue = [];
     this.state.champions.forEach(champion => {
-      vue.push(<Card name={champion.name} id={champion.id}/>);
+      vue.push(<Card key={champion.key} name={champion.name} id={champion.id} patch={this.state.patch}/>);
     })
     return vue;
   }
