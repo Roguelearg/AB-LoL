@@ -8,7 +8,8 @@ class App extends Component {
   constructor() {
       super();
       this.state = {
-        header: ''
+        header: '',
+        patch: '8.3.1'
       };
   }
 
@@ -39,7 +40,7 @@ class App extends Component {
                 League of Legends players
               </p>
             </div>
-            <ChooseChampionLayout />
+            <ChooseChampionLayout patch={this.state.patch}/>
             <WinratesLayout />
           </div>
         </div>
