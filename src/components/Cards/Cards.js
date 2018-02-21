@@ -23,7 +23,7 @@ class Cards extends Component {
   }
 
   getNames = () => {
-    fetch(`http://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
+    fetch(`https://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
       .then(response => response.json())
       .then(data => {
         return this.setState({champions: Object.values(data.data)})
