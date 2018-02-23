@@ -23,17 +23,25 @@ class Cards extends Component {
   }
 
   getNames = () => {
-    fetch(`https://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
+    fetch(`https://ab-lol-php.herokuapp.com/API/get_static_champions.php`)
       .then(response => response.json())
       .then(data => {
         return this.setState({champions: Object.values(data.data)})
       });
+
+    // fetch(`https://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     return this.setState({champions: Object.values(data.data)})
+    //   });
   }
 
   makeCards = () => {
     let vue = [];
+    // console.log(this.state.champions);
     this.state.champions.forEach(champion => {
-      vue.push(<Card key={champion.key} name={champion.name} id={champion.id} patch={this.state.patch}/>);
+      // console.log(champion);
+      vue.push(<Card key={champion.id} name={champion.name} id={champion.key} patch={this.state.patch}/>);
     })
     return vue;
   }
