@@ -5,7 +5,7 @@ import './WinratesLayout.css';
 const WinratesLayout = () => {
   return (
     <div className="ofh">
-      <h1 className="ft nmt bcr">Winrates</h1>
+      <h1 className="ft nmt bcr cw">Winrates</h1>
       <div className="tables">
         <Table className="best" name="Best"/>
         <Table className="worst" name="Worst"/>

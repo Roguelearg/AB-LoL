@@ -28,7 +28,7 @@ class App extends Component {
           <h1 className="title cw ft pl2">ARAM Builds</h1>
           <nav className="menu ff">
             <a className="cw" href=''>Champions</a>
-            <a className="" href=''>Winrates</a>
+            <a className="cw" href=''>Winrates</a>
           </nav>
           <p className="patch cw">Patch 8.3</p>
         </header>
@@ -36,7 +36,7 @@ class App extends Component {
           <div className="content">
             <div className="desc">
               <p className="cw"> Welcome to ARAM Builds </p>
-              <p> This web site provides you access to most used ARAM builds by
+              <p className="cw"> This web site provides you access to most used ARAM builds by
                 League of Legends players
               </p>
             </div>
