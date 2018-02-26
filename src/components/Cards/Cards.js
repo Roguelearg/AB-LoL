@@ -29,7 +29,6 @@ class Cards extends Component {
         const champions = Object.values(data.data).sort(function(a,b) {
           return (a.key > b.key) ? 1 : ((b.key > a.key) ? -1 : 0);
         } );
-        console.log(champions);
         return this.setState({champions: champions});
       });
     // fetch(`https://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
@@ -42,7 +41,6 @@ class Cards extends Component {
   makeCards = () => {
     let vue = [];
     this.state.champions.forEach(champion => {
-      console.log(champion);
       vue.push(<Card key={champion.id} name={champion.name} id={champion.key} patch={this.state.patch}/>);
     })
     return vue;
