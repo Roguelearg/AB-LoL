@@ -26,9 +26,12 @@ class Cards extends Component {
     fetch(`https://ab-lol-php.herokuapp.com/API/get_static_champions.php`)
       .then(response => response.json())
       .then(data => {
-        return this.setState({champions: Object.values(data.data)})
+        const champions = Object.values(data.data).sort(function(a,b) {
+          return (a.key > b.key) ? 1 : ((b.key > a.key) ? -1 : 0);
+        } );
+        console.log(champions);
+        return this.setState({champions: champions});
       });
-
     // fetch(`https://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/en_US/champion.json`)
     //   .then(response => response.json())
     //   .then(data => {
@@ -38,9 +41,8 @@ class Cards extends Component {
 
   makeCards = () => {
     let vue = [];
-    // console.log(this.state.champions);
     this.state.champions.forEach(champion => {
-      // console.log(champion);
+      console.log(champion);
       vue.push(<Card key={champion.id} name={champion.name} id={champion.key} patch={this.state.patch}/>);
     })
     return vue;

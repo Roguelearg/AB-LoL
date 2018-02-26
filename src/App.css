@@ -6,8 +6,14 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.cw {
+  color: rgba(180,240,255,1);
+}
+
 a {
   color: rgba(25, 167, 255, 1);
+  -webkit-text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  -moz-text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
   text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
@@ -94,6 +100,6 @@ a:last-of-type {
   align-self: center;
   justify-self: flex-end;
   padding-top: 1.2rem;
-  color: rgba(25, 167, 255, 1);
+  /* color: rgba(25, 167, 255, 1); */
   text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
