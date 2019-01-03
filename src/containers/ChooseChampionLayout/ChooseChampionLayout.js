@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from '../../components/Cards/Cards';
-import './ChooseChampionLayout.css';
+// import './ChooseChampionLayout.css';
+import './ChooseChampionLayout.scss';
 
 const ChooseChampionLayout = ({patch}) => {
   return (

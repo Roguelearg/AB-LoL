@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ChooseChampionLayout from './containers/ChooseChampionLayout/ChooseChampionLayout';
 import WinratesLayout from './containers/WinratesLayout/WinratesLayout';
-import './App.css';
+// import './App.css';
+import './test.scss';
 
 class App extends Component {
 
